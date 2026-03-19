@@ -160,15 +160,7 @@ const Employees: React.FC = () => {
                     <option value={EmployeePosition.DRIVER}>Driver</option>
                     <option value={EmployeePosition.CREW_LEAD}>Crew Lead</option>
                   </select>
-                </div>
-                <div className="col-span-2"><label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">{editId?'New Password (leave blank to keep current)':'Password'}</label>
-                  <div className="relative"><Key className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300" size={16}/>
-                    <input type="password" className="w-full pl-12 pr-5 py-3 bg-slate-50 rounded-xl font-bold focus:ring-2 focus:ring-blue-500 outline-none" placeholder={editId?'Leave blank to keep...':'Set password'} value={form.password} onChange={e=>setForm({...form,password:e.target.value})}/>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-end gap-3 pt-2">
-                <button type="button" onClick={()=>setModalOpen(false)} className="px-6 py-3 text-slate-400 font-black hover:text-slate-900">Cancel</button>
+                </div>htext-slate-900">Cancel</button>
                 <button type="submit" disabled={saving} className="bg-blue-600 text-white px-8 py-3 rounded-2xl font-black hover:bg-blue-700 shadow-xl shadow-blue-100 flex items-center gap-2 disabled:opacity-50">
                   <Save size={18}/><span>{saving?'Saving...':editId?'Update':'Create'}</span>
                 </button>
