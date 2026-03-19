@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = 'https://demo.gomoverly.com/api';
 const getToken = () => localStorage.getItem('mr_token') ?? '';
 const setToken = (t: string) => localStorage.setItem('mr_token', t);
 const clearAuth = () => { localStorage.removeItem('mr_token'); localStorage.removeItem('moverewards_user'); };
