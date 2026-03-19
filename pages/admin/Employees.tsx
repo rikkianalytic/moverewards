@@ -160,7 +160,7 @@ const Employees: React.FC = () => {
                     <option value={EmployeePosition.DRIVER}>Driver</option>
                     <option value={EmployeePosition.CREW_LEAD}>Crew Lead</option>
                   </select>
-              </div><button className="text-slate-900">Cancel</button>
+              </div><button type="button" onClick={()=>{setModalOpen(false);setEditId(null);}} className="px-6 py-3 text-slate-500 font-black hover:text-slate-900">Cancel</button>
                 <button type="submit" disabled={saving} className="bg-blue-600 text-white px-8 py-3 rounded-2xl font-black hover:bg-blue-700 shadow-xl shadow-blue-100 flex items-center gap-2 disabled:opacity-50">
                   <Save size={18}/><span>{saving?'Saving...':editId?'Update':'Create'}</span>
                 </button>
