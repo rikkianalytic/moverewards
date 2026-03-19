@@ -55,7 +55,7 @@ const Settings: React.FC = () => {
       const formData = new FormData();
       formData.append('image', file);
 
-      const res = await fetch(`${API_BASE}/upload.php`, {
+            const res = await fetch('https://demo.gomoverly.com/api/upload.php', {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` },
         body: formData,
@@ -65,7 +65,7 @@ const Settings: React.FC = () => {
       if (!res.ok) throw new Error(data.error || 'Upload failed');
 
       // Update preview with actual server URL
-      const serverUrl = `http://localhost/moverewards${data.url}`;
+            const serverUrl = `https://demo.gomoverly.com${data.url}`;
       setPreviewPic(serverUrl);
       refreshUser({ ...user!, profilePic: serverUrl });
       showToast('Profile photo updated!');
