@@ -5,9 +5,9 @@
 // ================================================
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'moverewards');
+define('DB_USER', 'rikide5_moverewards_db');
+define('DB_PASS', 'y4HQTe&6xfxx');
+define('DB_NAME', 'rikide5_moverewards_db');
 
 header('Content-Type: text/html; charset=UTF-8');
 
