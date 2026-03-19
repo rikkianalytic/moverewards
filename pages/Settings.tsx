@@ -1,4 +1,4 @@
-—import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { mockApi } from '../services/api';
 import { User, Lock, Camera, Save, Bell, BellOff } from 'lucide-react';
