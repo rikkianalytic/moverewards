@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+—import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { mockApi } from '../services/api';
 import { User, Lock, Camera, Save, Bell, BellOff } from 'lucide-react';
 
-const API_BASE = '/api';
+const UPLOAD_URL = 'https://demo.gomoverly.com/api/upload.php';
 
 const Toast = ({ msg, type }: { msg: string; type: 'success' | 'error' }) => (
   <div className={`fixed top-6 right-6 z-[200] px-6 py-3 rounded-2xl font-bold shadow-2xl flex items-center gap-2 animate-in slide-in-from-top-2 ${type === 'success' ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white'}`}>
